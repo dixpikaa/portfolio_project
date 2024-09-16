@@ -3,17 +3,23 @@
 import Countup from "../components/Countup"
 import TitleBtn from "../components/TitleBtn"
 import { Countupdata } from "../constant/data"
-
 import {motion} from 'framer-motion'
 import { textVariant2 } from "../utils/motion"
+import { DEVELOPERINFO } from "../utils/endpoints"
+import { fetchData } from "../utils/action"
 
-const Intro = () => {
+
+const Intro = async () => {
+  const developerinfo = await fetchData(DEVELOPERINFO);
+  console.log(developerinfo);
+  
   return (
+ 
     <section className="md:h-[100vh] py-8">
       <TitleBtn title="introduction" />
       <div className="mt-8 text-white max-w-[800px]">
         <div className="text-green-500">Hi there,</div>
-        <p className="text-[2rem] md:text-[3rem]">I&apos;m Dipika Timalsina,</p>
+        <p className="text-[2rem] md:text-[3rem]">I&apos;m {developerinfo.full_name},</p>
         <div className="text-[2rem] md:text-[3rem]"> <span className="text-green-500"> Web Developer</span></div>
       </div>
       <p className="text-gray-400 text-xl mt-8">Creating Seamless Experiences! </p>
@@ -31,7 +37,9 @@ const Intro = () => {
         ))}
       </motion.div>
     </section>
+   
   )
+
 }
 
 export default Intro

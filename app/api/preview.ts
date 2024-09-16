@@ -1,7 +1,7 @@
 
 
 
-  //  let p=  fetch ("https://developer-portfolio-server.onrender.com/api")
+  //  let p=  fetch ("")
   //  p.then ((value1)=> {
   //   return value1.json()
   //  }
