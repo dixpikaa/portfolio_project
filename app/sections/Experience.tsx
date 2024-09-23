@@ -11,7 +11,6 @@ const Experience = () => {
         ftitle="Education &"
         stitle="Experience"
       />
-ah 
       <div className="space-y-12 md:space-y-14 md:mt-12">
         {EducationExperiences.map(item=>(
           <EduExpCard

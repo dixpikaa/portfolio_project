@@ -9,6 +9,7 @@ import TitleBtn from "../components/TitleBtn"
 import { fadeIn, staggerContainer } from "../utils/motion"
 
 const Contact = () => {
+  const currentYear = new Date().getFullYear();
   return (
    <motion.section variants={fadeIn('right', 'tween', 0.2, 1)} className="max-h-[100vh] py-8">
       <TitleBtn title="contact me" />
@@ -17,7 +18,7 @@ const Contact = () => {
         stitle="Together!"
       />
 
-      <form action="" className="mr-20 md:w-3/4 space-y-4 md:space-y-8">
+      <form action="" className="mr-20  md:w-3/4 space-y-4 md:space-y-8">
         <div className="flex items-center flex-col md:flex-row gap-8 w-full">
           <Input
             id="fullname"
@@ -56,6 +57,9 @@ const Contact = () => {
           <Button title="Send Message" />
         </div>
       </form>
+      <div className="  mt-5 text-center block md:hidden text-gray-500">
+        <p>© {currentYear} Deepika, All Rights Reserved</p>
+      </div>
     </motion.section>
   )
 }

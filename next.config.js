@@ -1,7 +1,8 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
     images: {
-        domains: ['cdn.sanity.io']
+        domains: ['developer-portfolio-server-1.onrender.com'],
+
     }
 }
 

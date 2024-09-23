@@ -7,16 +7,9 @@ import { motion } from 'framer-motion'
 import { slideIn, textVariant2 } from "../utils/motion"
 import Image from "next/image"
 
-interface ProfileProps {
-  full_name: string;
-  position: string;
-  image: string;
-  address: string;
-  phone: string;
-  email: string;
-}
 
-const Profile: React.FC<ProfileProps> = ({ full_name, position, image, address, phone, email }) => {
+
+const Profile: React.FC= () => {
   const currentYear = new Date().getFullYear();
   return (
     <motion.section
@@ -25,7 +18,7 @@ const Profile: React.FC<ProfileProps> = ({ full_name, position, image, address, 
     >
       <div className="flex items-center justify-between px-2 py-1">
 
-        <div className="text-sm text-white italic"><span>{position}</span></div>
+        <div className="text-sm text-white italic"><span>Web Developer</span></div>
       </div>
       <div className="
       mx-8 my-4 rounded-full overflow-hidden">
@@ -41,11 +34,11 @@ const Profile: React.FC<ProfileProps> = ({ full_name, position, image, address, 
         />
       </div>
       <div className="text-center space-y-4 group">
-        <h1 className="uppercase text-3xl font-bold text-green-500">{full_name}</h1>
-        <small className=" text-orange-500 group-hover:underline">{position}</small>
-        <div className="text-gray-400">{address}</div>
-        <a data-tooltip="Click to Call Now" href="tel:861490010" className="hover:text-green-500 tooltip">{phone}</a> <br />
-        <a data-tooltip="Click to Send Email" href="mailto:dixpikaa@gmail.com" className="hover:text-green-500 tooltip">{email}</a>
+        <h1 className="uppercase text-3xl font-bold text-green-500">Dipika Timalsina</h1>
+        <small className=" text-orange-500 group-hover:underline">Web Developer</small>
+        <div className="text-gray-400">Duwakot, Bhaktapur</div>
+        <a data-tooltip="Click to Call Now" href="tel:861490010" className="hover:text-green-500 tooltip">9861490010</a> <br />
+        <a data-tooltip="Click to Send Email" href="mailto:dixpikaa@gmail.com" className="hover:text-green-500 tooltip">dixpikaa@gmail.com</a>
       </div>
 
       <motion.div variants={textVariant2} initial="hidden" whileInView="show" className="flex items-center justify-center gap-4 my-8">
@@ -59,7 +52,7 @@ const Profile: React.FC<ProfileProps> = ({ full_name, position, image, address, 
       <a data-tooltip="Call Now" href="tel:9861490010" className="tooltip">
         <Button title="hire me" />
       </a>
-      <div className="mt-8 text-center text-gray-500">
+      <div className=" mt-5 text-center hidden md:block text-gray-500">
         <p>© {currentYear} Deepika, All Rights Reserved</p>
       </div>
 

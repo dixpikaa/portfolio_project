@@ -7,11 +7,7 @@ import { FaReact, FaFigma } from 'react-icons/fa'
 import { RiFlutterFill } from 'react-icons/ri'
 
 export const projectCategory = [
-  {
-    id: 1,
-    title: "UX/UI",
-    icon: <FaFigma/>,
-  },
+  
   {
     id: 2,
     title: "Next Js",
@@ -22,18 +18,13 @@ export const projectCategory = [
     title: "React Js",
     icon: <FaReact/>
   },
-  {
-    id: 4,
-    title: "Flutter",
-    icon: <RiFlutterFill/>
-  }
 ]
 
 export const Countupdata = [
   {
     id: 1,
     title: 'Dummy Project',
-    count: 10,
+    count: 4,
   },
  
   {
@@ -128,22 +119,24 @@ export const Tools = [
 export const Skills = [
   {
     id: 1,
-    title: "Website Design",
-    subtitle: "I created digital products with unique ideas using Figma",
-    project: 3,
-  },
-  // {
-  //   id:4,
-  //   title: "Mobile App Development",
-  //   subtitle: "I build Android/ios application using flutter.",
-  //   project: 2,
-  // },
-  {
-    id: 2,
     title: "Web Development",
-    subtitle: "I build website go live with React Js, Next Js and Plain Tools",
+    subtitle: "Building live websites with React, Next.js, and core web technologies.",
     project: 12,
   },
+  {
+    
+    id: 3,
+    title: "Website Design",
+    subtitle: "Crafting unique digital products with Figma.",
+    project: 2,
+  },
+  {
+    id:2,
+    title: "Mobile App Development",
+    subtitle: "Developing Android and iOS apps using Flutter.",
+    project: 2,
+  },
+  
   
 ]
 
@@ -172,10 +165,60 @@ export const EducationExperiences = [
 export const PortfolioProjects = [
   {
     id: 1,
-    title: "Portfolio",
-    github: "",
+    title: "Travel and Tourism App",
+    github: "https://github.com/dixpikaa/travel-and--tourism",
+    livedemo: "https://travel-and-tourism-ivory.vercel.app/ ",
+    tool: "Next Js",
+    snapshoot: "/img/travelandtours.png",
+  },
+  {
+    id: 3,
+    title: "Admin Dashboard",
+    github: "https://github.com/dixpikaa/react_dashboard",
+    livedemo: "https://react-dashboard-eight-kappa.vercel.app/",
+    tool: "React Js",
+    snapshoot: "/img/dashboard.png",
+  },
+  {
+    id: 4,
+    title: "Pressed and Dressed Dashboard",
+    github: "https://github.com/lamadev101/general-admin-panel",
+    livedemo: "https://admin.thepressedanddressed.com/",
+    tool: "React Js",
+    snapshoot: "/img/pndadmin.png",
+  },
+  {
+    id: 4,
+    title: "Pressed and Dressed",
+    github: "https://github.com/lamadev101/ecommerce",
+    livedemo: "https://www.thepressedanddressed.com/",
+    tool: "Next Js",
+    snapshoot: "/img/pressedanddressed.png",
+  },
+
+  {
+    id: 4,
+    title: "Horoscope",
+    github: "https://github.com/dixpikaa/horoscope",
     livedemo: "",
-    tool: "Next JS",
-    snapshoot: "",
-  }
+    tool: "Flutter",
+    snapshoot: "/img/dashboard.png",
+  },
+  {
+    id: 4,
+    title: "Flutter Ecommerce",
+    github: "https://github.com/dixpikaa/horoscope",
+    livedemo: "",
+    tool: "Flutter",
+    snapshoot: "/img/dashboard.png",
+  },
+
+  {
+    id: 5,
+    title: "Vegetable Ecommerce",
+    github: "https://github.com/dixpikaa/vegetable_shop",
+    livedemo: "  https://vegetable-shop-gamma.vercel.app/",
+    tool: "React Js",
+    snapshoot: "/img/vegetable.png",
+  },
 ]

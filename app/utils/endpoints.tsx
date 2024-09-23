@@ -4,4 +4,5 @@ export const SOCIALMEDIA = "/social-media/"
 export const USERINFO = "/user-info/"
 export const SKILLS = "/skills/"
 export const CONTACT = "/contact/"
+export const EXPERIENCE= "/experience/"
 

@@ -18,7 +18,7 @@ const ServiceCard: React.FC<ServiceCardProps> = ({ title, subtitle, project }) =
     >
       <h1 className="text-3xl text-white">{title}</h1>
       <p className="text-gray-400 mt-2">{subtitle}</p>
-      <div className="text-white group-hover:underline mt-4">{project} Project</div>
+      <div className="text-white group-hover:underline mt-4"></div>
     </motion.div>
   )
 }
